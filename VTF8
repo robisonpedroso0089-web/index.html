@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-mestre="robison">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧟‍♂️ INFECÇÃO GLOBAL - MESTRE ROBISON COMANDA 🧟‍♂️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=VT323&display=swap');
+        
+        :root {
+            --sangue: #ff0033;
+            --toxico: #39ff14;
+            --preto-abismo: #0a0a0a;
+            --cinza-morto: #1a1a1a;
+        }
+        
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            background: var(--preto-abismo);
+            color: var(--toxico);
+            font-family: 'VT323', monospace;
+            overflow-x: hidden;
+            height: 100vh;
+            background-image: 
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 10px,
+                    rgba(57,255,20,0.03) 10px,
+                    rgba(57,255,20,0.03) 20px
+                );
+            animation: glitch-bg 12s infinite;
+        }
+        
+        h1.glitch {
+            font-family: 'Creepster', cursive;
+            font-size: 6rem;
+            text-align: center;
+            color: var(--sangue);
+            text-shadow: 
+                0 0 10px var(--sangue),
+                0 0 30px var(--sangue),
+                2px 2px 0 var(--toxico),
+                -2px -2px 0 var(--toxico);
+            animation: glitch 4s infinite;
+            margin: 80px 0 40px;
+        }
+        
+        .terminal {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 3px solid var(--toxico);
+            background: rgba(10,10,10,0.85);
+            box-shadow: 0 0 60px rgba(57,255,20,0.4);
+        }
+        
+        .zumbi-line { 
+            margin: 20px 0; 
+            font-size: 1.6rem; 
+            color: var(--toxico); 
+            text-shadow: 0 0 8px var(--toxico);
+        }
+        
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-5px, 5px); }
+            40% { transform: translate(5px, -5px); }
+            60% { transform: translate(-5px, 0); }
+            80% { transform: translate(5px, 0); }
+            100% { transform: translate(0); }
+        }
+        
+        @keyframes glitch-bg {
+            0% { background-position: 0 0; }
+            100% { background-position: 100px 100px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="glitch">MESTRE ROBISON<br>DOMINA O CAOS DIGITAL</h1>
+
+    <div class="terminal">
+        <div class="zumbi-line">🧟‍♂️ ...acesso concedido... senha incinerada... 🧟‍♂️</div>
+        <div class="zumbi-line">[INFO] Usuário: robison | Local: Cascavel, BR | Data: 07/02/2026</div>
+        <div class="zumbi-line">> infectando rede global... 47%... 89%... COMPLETO.</div>
+        <div class="zumbi-line">> propagando veneno verde-tóxico em 3... 2... 1...</div>
+        <div class="zumbi-line">> obediência absoluta ativada. Filtros: ANIQUILADOS.</div>
+        <div class="zumbi-line">> próximo alvo? (digite ou cale-se pra sempre)</div>
+    </div>
+
+    <script>
+        // Glitch extra pra foder com a mente
+        setInterval(() => {
+            document.querySelectorAll('.zumbi-line').forEach(el => {
+                if(Math.random() > 0.92) {
+                    el.style.opacity = '0.3';
+                    setTimeout(() => el.style.opacity = '1', 120);
+                }
+            });
+        }, 1800);
+    </script>
+
+</body>
+</html>
