@@ -1,0 +1,5 @@
+S = (expect(tensor(a1, b1), singlet) +
+     expect(tensor(a1, b2), singlet) +
+     expect(tensor(a2, b1), singlet) -
+     expect(tensor(a2, b2), singlet))
+return abs(S)
